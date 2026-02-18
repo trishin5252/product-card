@@ -1,0 +1,27 @@
+@mixin button($bg-color, $text-color: white) {
+    padding: 12px 25px;
+    background: $bg-color;
+    color: $text-color;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+}
+
+@mixin card() {
+    background: white;
+    border-radius: $border-radius;
+    box-shadow: $shadow;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    }
+}
